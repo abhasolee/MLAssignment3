@@ -31,11 +31,10 @@ Models were trained for 3-5 epochs (Task1 for 3 epochs and Task2 for 5 epochs) o
 ### Task 2: Machine Translation
 | Model Setup | Evaluation Metric (BLEU Score) | Final Loss |
 | :--- | :--- | :--- |
-| **Seq2Seq LSTM + Word2Vec** | 0.0456 | | 3.5794 |
-| **Seq2Seq LSTM + One-Hot** | 0.0455 | | 3.6559 |
-| **Seq2Seq GRU + Word2Vec** | **0.1121** | | **3.0160** | 
-| **Seq2Seq GRU + One-Hot** | 0.0432 | | 3.5191 |
-
+| **Seq2Seq LSTM + Word2Vec** | 0.0456 | 3.5794 |
+| **Seq2Seq LSTM + One-Hot** | 0.0455 | 3.6559 |
+| **Seq2Seq GRU + Word2Vec** | **0.1121** | **3.0160** |
+| **Seq2Seq GRU + One-Hot** | 0.0432 | 3.5191 |
 
 ## 6. Comparison of Models
 From our results, GRU with One Hot Encoding is the best for text generation and GRU with Word2Vec embedding is the best for machine translation.
