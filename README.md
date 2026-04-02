@@ -52,3 +52,19 @@ From our results, GRU with One Hot Encoding is the best for text generation and 
 ## 9. Possible Future Improvements
 * **Implementing Attention Mechanisms:** The most necessary improvement for the translation task is adding Bahdanau or Luong Attention mechanisms. This would allow the Decoder to dynamically "look back" at specific, relevant words in the Encoder's hidden states (resolving the context decay limitation) rather than relying purely on the final state vector.
 * **Migration to Transformers:** Replacing the RNN backbones entirely with Transformer architectures (utilizing multi-head self-attention) would eliminate the sequential processing bottleneck and drastically improve the models' understanding of long-range bilingual grammatical syntax.
+
+## **6\. How to run the code**
+
+1) Clone the Github repo.  
+2) Install the required dependencies present in the requirements.txt file
+
+```py
+pip install -r requirements.txt
+```
+
+3) Run the train_task1 and train_task2 python files.
+
+```py
+python -u train_task1.py
+python -u train_task2.py
+```
